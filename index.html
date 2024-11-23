@@ -78,6 +78,60 @@
            font-family: 'Courier New', Courier;
            font-size: 23px;
         }
+         /* Mobile Styles */
+        @media (max-width: 768px) {
+            .services, .contact {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .services div, .contact div {
+                padding: 15px;
+            }
+
+            nav a {
+                padding: 12px 15px;
+            }
+
+            section {
+                padding: 15px;
+                margin: 15px;
+            }
+
+            /* Image adjustments for mobile */
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            /* For small screens, adjust columns in the "About Us" section */
+            .about table {
+                width: 100%;
+            }
+
+            .about td {
+                display: block;
+                margin-bottom: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* Even smaller screens adjustments */
+            nav a {
+                padding: 10px 12px;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            header h2 {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 <body style="background-image:linear-gradient(#63c5da,#b65fcf,pink);">
